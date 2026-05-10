@@ -1,31 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast'
+import SingleItem from './SingleItem'
+import { FaTrash } from 'react-icons/fa'
 
 const Inputs = () => {
 
     const [val, setVal] = useState( '' )
     const [error, setError] = useState( false )
-
-    const handleData = ( a ) => {
-
-        a.preventDefault()
-
-
-        if ( !val ) {
-            setError( true )
-            toast.error( 'Please enter a value' )
-        } else {
-            console.log( val )
-            setError( false )
-            toast.success( 'Value added successfully!' )
-        }
-        setVal( '' )
+    const [data, setData] = useState( [] )
 
 
 
-        setTimeout( () => {
-            setError( false )
-        }, 3000 )
+
+    const removeItem = ( clickId ) => {
+        let newItems = data.filter( ( item, index ) => {
+            return item.id !== clickId
+        } )
+
+
+        setData( newItems )
 
 
 
@@ -33,11 +26,25 @@ const Inputs = () => {
 
 
 
+    const handleData = ( a ) => {
 
-
-
-
-
+        a.preventDefault()
+        if ( !val ) {
+            setError( true )
+            toast.error( 'Please enter a value' )
+        } else {
+            setData( [...data, {
+                val,
+                id: Date.now()
+            }] )
+            setError( false )
+            toast.success( 'Value added successfully!' )
+        }
+        setVal( '' )
+        setTimeout( () => {
+            setError( false )
+        }, 3000 )
+    }
     return (
         <>
 
@@ -56,6 +63,20 @@ const Inputs = () => {
                     Add Data
                 </button>
             </form>
+
+
+            <div className="container grid grid-cols-4 gap-4 mx-auto">
+                {
+                    data.map( ( item, index ) => {
+                        return <div className='p-4 flex justify-between shadow-2xl shadow-gray-600'>
+                            {item.val}
+                            <FaTrash onClick={() => removeItem( item.id )} className='text-red-500 cursor-pointer' />
+                        </div>
+                    } )
+                }
+            </div>
+
+
 
         </>
     )

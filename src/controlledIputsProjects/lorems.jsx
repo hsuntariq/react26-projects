@@ -1,0 +1,23 @@
+export const lorems = [
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores assumenda dolorum quo cupiditate, ab quis sequi enim excepturi rerum ullam!",
+
+]

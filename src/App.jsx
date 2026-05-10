@@ -12,6 +12,8 @@ import Api from './hooks/projects/apis/Api'
 import MainPage from './hooks/projects/ecommerce/MainPage'
 import Inputs from './controlledInputs/Inputs'
 import { Toaster } from 'react-hot-toast'
+import LoremGenerator from './controlledIputsProjects/LoremGenerator'
+import ColorGenrator from './controlledIputsProjects/ColorGenrator'
 
 const App = () => {
   return (
@@ -27,7 +29,9 @@ const App = () => {
       {/* <EffectBasics /> */}
       {/* <Api /> */}
       {/* <MainPage /> */}
-      <Inputs />
+      {/* <Inputs /> */}
+      {/* <LoremGenerator /> */}
+      <ColorGenrator />
 
       <Toaster />
 
