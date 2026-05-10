@@ -28,7 +28,7 @@ const ColorGenrator = () => {
     return (
         <>
 
-            <form className='w-1/2 p-5 mx-auto shadow-2xl my-10 shadow-gray-600 rounded-md'>
+            <form className='w-[90%] lg:w-1/2 p-5 mx-auto shadow-2xl my-10 shadow-gray-600 rounded-md'>
                 <h1 className="text-center text-4xl">
                     Color Generator
                 </h1>
@@ -44,7 +44,7 @@ const ColorGenrator = () => {
             </form>
 
 
-            <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+            <div className="container p-5 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                 {
                     list?.map( ( item, index ) => {
                         return <SingleColor {...item} hex={item.hex} key={index} />
