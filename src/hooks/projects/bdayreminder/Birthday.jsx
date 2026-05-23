@@ -3,22 +3,14 @@ import SingleBday from './SingleBday'
 import { bdays } from './bdays'
 import { FaTrash } from 'react-icons/fa'
 import { IoRefresh } from 'react-icons/io5'
+import { useGlobal } from '../../../context/AppContext'
 
 const Birthday = () => {
 
-    const [data, setData] = useState( bdays )
+    const { data, setData } = useGlobal()
 
 
 
-    const removeSingleBday = ( clickID ) => {
-        let newData = data.filter( ( item, index ) => {
-            return item.id !== clickID
-        } )
-
-        setData( newData )
-
-
-    }
 
 
 
@@ -30,7 +22,7 @@ const Birthday = () => {
                 <h1 className="text-center text-5xl">{data.length} Birthdays today</h1>
                 {
                     data.map( ( item, index ) => {
-                        return <SingleBday remove={removeSingleBday} key={index} {...item} />
+                        return <SingleBday key={index} {...item} />
                     } )
                 }
 

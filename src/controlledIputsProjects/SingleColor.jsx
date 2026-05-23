@@ -25,7 +25,7 @@ const SingleColor = ( { rgb, hex, type } ) => {
         <>
             <div style={{
                 backgroundColor: `rgb(${rgb})`
-            }} className={`p-20 text-center relative ${type == 'shade' ? 'text-white' : 'text-black'}  text-2xl rounded-md shadow-2xl shadow-gray-600`}>
+            }} className={`p-20 text-center relative ${type == 'shade' || type == 'base' ? 'text-white' : 'text-black'}  text-2xl rounded-md shadow-2xl shadow-gray-600`}>
                 {
                     copy ? (
                         <FaCheckDouble className='absolute top-3 left-3 cursor-pointer' onClick={handleCopy} />

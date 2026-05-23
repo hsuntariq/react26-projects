@@ -1,7 +1,9 @@
 import React from 'react'
 import { FaTrash } from 'react-icons/fa'
+import { useGlobal } from '../../../context/AppContext'
 
-const SingleBday = ( { id, name, age, image, remove } ) => {
+const SingleBday = ( { id, name, age, image } ) => {
+    const { removeSingleBday } = useGlobal()
     return (
         <>
 
@@ -18,7 +20,7 @@ const SingleBday = ( { id, name, age, image, remove } ) => {
 
                 {/* delte btn */}
 
-                <button onClick={() => remove( id )} className="bg-red-500 rounded-full cursor-pointer hover:bg-red-600 active:scale-95 transition-all p-4 text-white">
+                <button onClick={() => removeSingleBday( id )} className="bg-red-500 rounded-full cursor-pointer hover:bg-red-600 active:scale-95 transition-all p-4 text-white">
                     <FaTrash />
                 </button>
 
